@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usman Fiaz — Design. Build. Grow.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Grid Paper Background -->
+    <div class="grid-bg"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-name">USMAN FIAZ</div>
+        <div class="nav-links">
+            <a href="#work">The Work</a>
+            <a href="#ventures">Ventures</a>
+            <a href="#proof">Proof</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact" class="nav-cta">Let's Talk</a>
+        </div>
+        <button class="nav-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="#work">The Work</a>
+        <a href="#ventures">Ventures</a>
+        <a href="#proof">Proof</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact" class="nav-cta">Let's Talk</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-layout">
+                <div class="hero-content">
+                    <p class="hero-label handwritten">serial creative entrepreneur</p>
+                    <h1 class="hero-headline">
+                        Things that grow<br>
+                        without being <span class="highlight">forced.</span>
+                    </h1>
+                    <p class="hero-sub">
+                        Products. Communities. Brands.<br>
+                        Building what earns attention — not what buys it.
+                    </p>
+                    <a href="#contact" class="btn-primary">Start a conversation →</a>
+                </div>
+                <div class="hero-visual">
+                    <!-- Creative Mind Map / Venn Diagram SVG -->
+                    <svg class="mind-map-svg" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Venn diagram circles - hand drawn wobbly style -->
+                        <!-- Top circle - DESIGN -->
+                        <ellipse cx="300" cy="215" rx="140" ry="135" stroke="#1a1a1a" stroke-width="2" fill="rgba(255,214,10,0.08)" stroke-linecap="round" class="venn-circle venn-1"/>
+                        <!-- Bottom-left circle - BUILD -->
+                        <ellipse cx="220" cy="350" rx="140" ry="135" stroke="#1a1a1a" stroke-width="2" fill="rgba(230,57,70,0.06)" stroke-linecap="round" class="venn-circle venn-2"/>
+                        <!-- Bottom-right circle - GROW -->
+                        <ellipse cx="380" cy="350" rx="140" ry="135" stroke="#1a1a1a" stroke-width="2" fill="rgba(26,26,26,0.04)" stroke-linecap="round" class="venn-circle venn-3"/>
+
+                        <!-- Center star/spark where all three meet -->
+                        <path d="M300 300 L304 285 L308 300 L323 296 L312 304 L320 318 L308 310 L300 325 L292 310 L280 318 L288 304 L277 296 L292 300 L296 285 Z" fill="#ffd60a" stroke="#1a1a1a" stroke-width="1" class="center-spark"/>
+
+                        <!-- Handwritten circle labels -->
+                        <text x="300" y="160" text-anchor="middle" class="venn-label-main" font-family="Caveat" font-size="32" font-weight="700" fill="#1a1a1a">DESIGN</text>
+                        <text x="300" y="185" text-anchor="middle" class="venn-label-sub" font-family="Caveat" font-size="16" fill="#8a8a8a">product, UX, brand</text>
+
+                        <text x="155" y="420" text-anchor="middle" class="venn-label-main" font-family="Caveat" font-size="32" font-weight="700" fill="#1a1a1a">BUILD</text>
+                        <text x="155" y="445" text-anchor="middle" class="venn-label-sub" font-family="Caveat" font-size="16" fill="#8a8a8a">startups, products</text>
+
+                        <text x="445" y="420" text-anchor="middle" class="venn-label-main" font-family="Caveat" font-size="32" font-weight="700" fill="#1a1a1a">GROW</text>
+                        <text x="445" y="445" text-anchor="middle" class="venn-label-sub" font-family="Caveat" font-size="16" fill="#8a8a8a">organic, community</text>
+
+                        <!-- Intersection labels - handwritten style -->
+                        <!-- Design + Build -->
+                        <text x="230" y="265" text-anchor="middle" font-family="Caveat" font-size="15" fill="#e63946">product</text>
+                        <text x="230" y="282" text-anchor="middle" font-family="Caveat" font-size="15" fill="#e63946">thinking</text>
+
+                        <!-- Design + Grow -->
+                        <text x="370" y="265" text-anchor="middle" font-family="Caveat" font-size="15" fill="#e63946">brand</text>
+                        <text x="370" y="282" text-anchor="middle" font-family="Caveat" font-size="15" fill="#e63946">identity</text>
+
+                        <!-- Build + Grow -->
+                        <text x="300" y="400" text-anchor="middle" font-family="Caveat" font-size="15" fill="#e63946">community</text>
+                        <text x="300" y="417" text-anchor="middle" font-family="Caveat" font-size="15" fill="#e63946">architecture</text>
+
+                        <!-- Center - all three overlap -->
+                        <text x="300" y="340" text-anchor="middle" font-family="Caveat" font-size="18" font-weight="700" fill="#1a1a1a">THE</text>
+                        <text x="300" y="358" text-anchor="middle" font-family="Caveat" font-size="18" font-weight="700" fill="#1a1a1a">MAGIC ★</text>
+
+                        <!-- Doodle arrows and annotations around the diagram -->
+                        <!-- Arrow pointing to center -->
+                        <path d="M480 200 C460 220, 440 250, 420 270" stroke="#e63946" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-dasharray="4 3"/>
+                        <path d="M420 270 L428 262 M420 270 L426 278" stroke="#e63946" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                        <text x="495" y="195" font-family="Caveat" font-size="14" fill="#e63946">this is where</text>
+                        <text x="495" y="212" font-family="Caveat" font-size="14" fill="#e63946">the good stuff</text>
+                        <text x="495" y="229" font-family="Caveat" font-size="14" fill="#e63946">happens →</text>
+
+                        <!-- Small doodles - stars, circles -->
+                        <circle cx="520" cy="320" r="3" fill="#ffd60a"/>
+                        <circle cx="535" cy="335" r="2" fill="#ffd60a"/>
+                        <circle cx="80" cy="220" r="3" fill="#ffd60a"/>
+                        <circle cx="65" cy="240" r="2" fill="#e63946"/>
+
+                        <!-- Underline scribbles under key words -->
+                        <path d="M270 165 C280 168, 290 166, 300 169 C310 166, 320 168, 330 165" stroke="#ffd60a" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+                        <!-- Small lightbulb doodle -->
+                        <g transform="translate(75, 340)">
+                            <path d="M10 0 C4 0, 0 5, 0 10 C0 16, 5 20, 8 24 L12 24 C15 20, 20 16, 20 10 C20 5, 16 0, 10 0Z" stroke="#1a1a1a" stroke-width="1.2" fill="none"/>
+                            <line x1="7" y1="26" x2="13" y2="26" stroke="#1a1a1a" stroke-width="1.2"/>
+                            <line x1="7" y1="28" x2="13" y2="28" stroke="#1a1a1a" stroke-width="1.2"/>
+                            <path d="M7 0 L5 -5 M13 0 L15 -5 M10 -2 L10 -7" stroke="#ffd60a" stroke-width="1.2" stroke-linecap="round"/>
+                        </g>
+                        <text x="75" y="385" font-family="Caveat" font-size="13" fill="#8a8a8a">ideas live here</text>
+
+                        <!-- Squiggly underline under GROW -->
+                        <path d="M415 450 C420 455, 430 448, 440 453 C450 448, 460 455, 475 450" stroke="#e63946" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+                        <!-- Organic callout -->
+                        <g transform="translate(60, 430)">
+                            <rect x="0" y="0" width="90" height="30" rx="2" fill="none" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="3 3"/>
+                            <text x="45" y="20" text-anchor="middle" font-family="Caveat" font-size="15" fill="#1a1a1a">always organic</text>
+                        </g>
+                        <path d="M150 445 C165 435, 180 420, 195 405" stroke="#1a1a1a" stroke-width="1" fill="none" stroke-linecap="round"/>
+
+                        <!-- 21+ countries callout -->
+                        <g transform="translate(440, 470)">
+                            <text x="0" y="0" font-family="Space Grotesk" font-size="28" font-weight="700" fill="#1a1a1a">21+</text>
+                            <text x="0" y="16" font-family="Caveat" font-size="13" fill="#8a8a8a">countries, $0 ads</text>
+                        </g>
+                    </svg>
+
+                    <!-- Floating handwritten notes around the diagram -->
+                    <div class="hero-float-note hero-note-1 handwritten">not a generalist —<br>a throughline</div>
+                    <div class="hero-float-note hero-note-2 handwritten">design is the<br>operating system</div>
+                </div>
+            </div>
+
+            <!-- Handwritten annotation -->
+            <div class="hero-annotation handwritten">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <path d="M20 5 L20 30 M20 30 L12 22 M20 30 L28 22" stroke="#e63946" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                scroll, it gets interesting ↓
+            </div>
+        </div>
+    </section>
+
+    <!-- THE INTRO -->
+    <section class="intro section" id="intro">
+        <div class="container">
+            <span class="section-label mono">THE SHORT VERSION</span>
+            <div class="intro-layout">
+                <div class="intro-main">
+                    <h2>Designer by instinct.<br>Entrepreneur by habit.<br>Growth? Always <span class="highlight">organic.</span></h2>
+                </div>
+                <div class="intro-body">
+                    <p>Some people pick a lane. This was never about picking a lane.</p>
+                    <p>Product design. Community architecture. UX. Branding. Startup strategy. Not separate skills — one way of seeing.</p>
+                    <p class="intro-callout">The through-line?<br><strong>Make it clear. Make it real. Make it grow.</strong></p>
+                    <p>When something is designed right, people don't need convincing. They just show up. They stay. They bring others.</p>
+                    <p>That's how a group chat became a community in 21+ countries. That's how products go from confused to obvious. That's how brands stop explaining themselves.</p>
+                </div>
+            </div>
+            <!-- Doodle annotation -->
+            <div class="doodle-note handwritten doodle-note-right">
+                <svg width="30" height="20" viewBox="0 0 30 20" class="doodle-arrow-left">
+                    <path d="M28 10 L3 10 M3 10 L10 3 M3 10 L10 17" stroke="#e63946" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                </svg>
+                not a generalist. a throughline.
+            </div>
+        </div>
+    </section>
+
+    <!-- THE WORK -->
+    <section class="work section" id="work">
+        <div class="container">
+            <span class="section-label mono">THE WORK</span>
+            <h2 class="section-headline">One lens. Four <span class="highlight">outcomes.</span></h2>
+
+            <div class="work-grid">
+                <div class="work-card">
+                    <span class="work-number handwritten">01</span>
+                    <h3>Product Design & UX</h3>
+                    <p>Not interfaces. Decisions made visible. From first prototype to the version users actually trust. The kind of design that makes people feel <em>smart</em> for using it.</p>
+                    <div class="work-doodle handwritten">← zero to one</div>
+                </div>
+                <div class="work-card">
+                    <span class="work-number handwritten">02</span>
+                    <h3>Brand & Positioning</h3>
+                    <p>That feeling when you see a brand and just <em>get it</em>? Not luck. Strategy made invisible. No mood boards. No "brand essence workshops." Just clarity.</p>
+                    <div class="work-doodle handwritten">← no fluff</div>
+                </div>
+                <div class="work-card">
+                    <span class="work-number handwritten">03</span>
+                    <h3>Community Building</h3>
+                    <p>BYOC — entrepreneurs, investors, creators across 21+ countries. Zero paid ads. Communities don't grow from content calendars. They grow from shared identity, designed with intent.</p>
+                    <div class="work-doodle handwritten">← 21+ countries, $0 ads</div>
+                </div>
+                <div class="work-card">
+                    <span class="work-number handwritten">04</span>
+                    <h3>Startup & Product Strategy</h3>
+                    <p>For founders and teams too close to see the problem. The questions that got skipped. The clarity that got buried. Then — build the answer together.</p>
+                    <div class="work-doodle handwritten">← the hard questions</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ORGANIC GROWTH -->
+    <section class="growth section section-dark" id="growth">
+        <div class="container">
+            <span class="section-label mono">THE GROWTH PHILOSOPHY</span>
+            <div class="growth-layout">
+                <div class="growth-main">
+                    <h2>Never paid for <span class="highlight">attention.</span><br>Only earned it.</h2>
+                </div>
+                <div class="growth-body">
+                    <p>Everyone's optimizing funnels. The real question: is the thing worth sharing in the first place?</p>
+                    <p>Organic growth isn't a tactic here. It's a filter.</p>
+                    <div class="growth-rules">
+                        <div class="growth-rule">
+                            <span class="handwritten rule-x">✕</span>
+                            <p>If a product needs paid ads to survive day one — the product isn't ready.</p>
+                        </div>
+                        <div class="growth-rule">
+                            <span class="handwritten rule-x">✕</span>
+                            <p>If a community needs incentives to stay — it's not a community yet.</p>
+                        </div>
+                        <div class="growth-rule">
+                            <span class="handwritten rule-check">✓</span>
+                            <p>Build the thing worth talking about. Growth becomes the side effect.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VENTURES -->
+    <section class="ventures section" id="ventures">
+        <div class="container">
+            <span class="section-label mono">BUILT, NOT ADVISED</span>
+            <h2 class="section-headline">Not just consulting. <span class="highlight">Building.</span></h2>
+            <p class="section-sub">There's a difference between telling someone how to build and having built it yourself.</p>
+
+            <div class="ventures-grid">
+                <div class="venture-card">
+                    <span class="venture-tag mono">COMMUNITY</span>
+                    <h3>BYOC</h3>
+                    <p>A global community of entrepreneurs, investors, and creators. 21+ countries. Purely organic. No ad spend. No growth hacks. Just a space designed well enough that people brought others in themselves.</p>
+                    <div class="venture-stat">
+                        <span class="venture-stat-num">21+</span>
+                        <span class="venture-stat-label mono">COUNTRIES</span>
+                    </div>
+                    <div class="venture-annotation handwritten">$0 spent on growth →</div>
+                </div>
+                <div class="venture-card">
+                    <span class="venture-tag mono">VENTURE</span>
+                    <h3>[Your Venture]</h3>
+                    <p>Description of your entrepreneurial venture — what it is, why it exists, and what it proved about your approach.</p>
+                    <div class="venture-annotation handwritten">add details here →</div>
+                </div>
+                <div class="venture-card">
+                    <span class="venture-tag mono">VENTURE</span>
+                    <h3>[Your Venture]</h3>
+                    <p>Description of another venture — the story, the insight, the outcome.</p>
+                    <div class="venture-annotation handwritten">add details here →</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUSTED BY -->
+    <section class="trusted section" id="trusted">
+        <div class="container">
+            <span class="section-label mono">TRUSTED BY</span>
+            <h2 class="section-headline">The work speaks through those who've <span class="highlight">used it.</span></h2>
+
+            <div class="logo-grid">
+                <div class="logo-item"><span class="mono">COMPANY</span></div>
+                <div class="logo-item"><span class="mono">COMPANY</span></div>
+                <div class="logo-item"><span class="mono">COMPANY</span></div>
+                <div class="logo-item"><span class="mono">COMPANY</span></div>
+                <div class="logo-item"><span class="mono">COMPANY</span></div>
+                <div class="logo-item"><span class="mono">COMPANY</span></div>
+                <div class="logo-item"><span class="mono">COMPANY</span></div>
+                <div class="logo-item"><span class="mono">COMPANY</span></div>
+            </div>
+
+            <blockquote class="testimonial">
+                <p>"Add a powerful testimonial quote here from someone who's worked with Usman."</p>
+                <cite class="mono">— NAME, TITLE, COMPANY</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- CASE STUDIES -->
+    <section class="proof section section-dark" id="proof">
+        <div class="container">
+            <span class="section-label mono">PROOF OF WORK</span>
+            <h2 class="section-headline">Not mockups. What actually <span class="highlight">changed.</span></h2>
+
+            <div class="case-studies">
+                <div class="case-card">
+                    <div class="case-tag mono">COMMUNITY ARCHITECTURE / ORGANIC GROWTH</div>
+                    <h3>BYOC</h3>
+                    <p>Started as a group chat. Now a global network across 21+ countries. No referral programs. No paid campaigns. A space designed so well that members became the growth engine.</p>
+                    <div class="case-shift">
+                        <span class="mono case-shift-label">THE SHIFT</span>
+                        <p>Group chat → 21+ countries. Pure organic.</p>
+                    </div>
+                    <div class="case-annotation handwritten">no ads. no hacks. just design. ★</div>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-tag mono">PRODUCT DESIGN / STRATEGY</div>
+                    <h3>[Project Name]</h3>
+                    <p>What was broken → what was seen that nobody else saw → what shifted. Tell the story of the transformation, not the deliverables.</p>
+                    <div class="case-shift">
+                        <span class="mono case-shift-label">THE SHIFT</span>
+                        <p>[Outcome in one line]</p>
+                    </div>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-tag mono">BRANDING / UX / TRUST</div>
+                    <h3>[Project Name]</h3>
+                    <p>The trust problem → the design intervention → the result. Every case study is a short story about what changed and why.</p>
+                    <div class="case-shift">
+                        <span class="mono case-shift-label">THE SHIFT</span>
+                        <p>[Outcome in one line]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHOTO GALLERY -->
+    <section class="gallery section" id="gallery">
+        <div class="container">
+            <span class="section-label mono">IN THE ROOM</span>
+            <h2 class="section-headline">Showing up. That's the work most people <span class="highlight">skip.</span></h2>
+
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-wide">
+                    <div class="gallery-placeholder">
+                        <span class="mono">PHOTO</span>
+                        <span class="handwritten gallery-caption">BYOC meetup</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span class="mono">PHOTO</span>
+                        <span class="handwritten gallery-caption">workshop</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span class="mono">PHOTO</span>
+                        <span class="handwritten gallery-caption">building</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span class="mono">PHOTO</span>
+                        <span class="handwritten gallery-caption">on stage</span>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-wide">
+                    <div class="gallery-placeholder">
+                        <span class="mono">PHOTO</span>
+                        <span class="handwritten gallery-caption">community event</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span class="mono">PHOTO</span>
+                        <span class="handwritten gallery-caption">whiteboard session</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section class="philosophy section" id="philosophy">
+        <div class="container">
+            <div class="philosophy-layout">
+                <h2>Thinking and making aren't <span class="highlight">separate</span> jobs.</h2>
+                <div class="philosophy-body">
+                    <p>Most people hire a strategist, then a designer, then a growth person. Three conversations. Three invoices. One diluted outcome.</p>
+                    <p>What if the person asking "why are we building this?" is the same person up at midnight getting the kerning right?</p>
+                    <p class="philosophy-punchline"><strong>Not a contradiction. The whole point.</strong></p>
+                </div>
+            </div>
+            <div class="philosophy-doodle handwritten">
+                ☝ this is how things actually get built
+            </div>
+        </div>
+    </section>
+
+    <!-- WHO THIS IS FOR -->
+    <section class="audience section section-dark" id="audience">
+        <div class="container">
+            <h2>Still reading? Probably the <span class="highlight">right person.</span></h2>
+            <div class="audience-grid">
+                <div class="audience-item">
+                    <span class="handwritten audience-marker">→</span>
+                    <p>Founders building something they actually believe in</p>
+                </div>
+                <div class="audience-item">
+                    <span class="handwritten audience-marker">→</span>
+                    <p>Startups where the product is better than the story</p>
+                </div>
+                <div class="audience-item">
+                    <span class="handwritten audience-marker">→</span>
+                    <p>Governments and institutions that want trust, not just a deliverable</p>
+                </div>
+                <div class="audience-item">
+                    <span class="handwritten audience-marker">→</span>
+                    <p>Anyone building community who's tired of "engagement strategy" playbooks</p>
+                </div>
+            </div>
+            <p class="audience-closer">Not an agency. Not a vendor.<br><strong>The person you bring in when it needs to feel right <em>and</em> work right.</strong></p>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta section" id="contact">
+        <div class="container">
+            <div class="cta-layout">
+                <h2>A conversation.<br>Not a <span class="highlight">sales call.</span></h2>
+                <p>Share what's being built. If there's a fit, the how becomes obvious. If there's not, that honesty is free.</p>
+                <a href="mailto:hello@usmanfiaz.com" class="btn-primary btn-large">Let's Talk →</a>
+                <div class="cta-doodle handwritten">
+                    <svg width="60" height="40" viewBox="0 0 60 40">
+                        <path d="M5 35 C15 5, 45 5, 55 35" stroke="#e63946" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                        <path d="M55 35 L50 25 M55 35 L48 35" stroke="#e63946" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                    </svg>
+                    the best projects start here
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-layout">
+            <div class="footer-left">
+                <span class="footer-name">USMAN FIAZ</span>
+                <span class="handwritten footer-tagline">building things worth talking about</span>
+            </div>
+            <div class="footer-right mono">
+                <a href="#">Twitter / X</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
