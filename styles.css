@@ -356,7 +356,13 @@ p {
 .hero-buttons {
     display: flex;
     gap: 16px;
-    flex-wrap: wrap;
+}
+
+.hero-buttons .btn-primary,
+.hero-buttons .btn-secondary {
+    flex: 1;
+    text-align: center;
+    white-space: nowrap;
 }
 
 /* --- Hero Visual / Portrait Sketch --- */
