@@ -448,83 +448,95 @@ p {
     font-size: 1rem;
 }
 
-/* --- Hero Venn Section (below hero) --- */
-.hero-venn-section {
-    margin-top: 80px;
-    text-align: center;
+/* --- Three Pillars Diagram --- */
+.intro-headline {
+    line-height: 1.2;
+    margin-bottom: 60px;
 }
 
-.hero-venn-label {
-    font-size: 1.3rem;
+.pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 0;
+}
+
+.pillar {
+    border: 2px solid var(--black);
+    padding: 32px 28px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pillar:hover {
+    transform: translateY(-6px);
+    box-shadow: 6px 6px 0 var(--yellow);
+}
+
+.pillar-1 { border-top: 5px solid var(--yellow); }
+.pillar-2 { border-top: 5px solid var(--red); }
+.pillar-3 { border-top: 5px solid var(--black); }
+
+.pillar-num {
+    display: block;
+    font-size: 0.7rem;
+    color: #999;
+    margin-bottom: 16px;
+}
+
+.pillar-title {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.pillar-desc {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.pillar-tag {
+    display: inline-block;
+    font-size: 0.65rem;
     color: var(--red);
-    margin-bottom: 24px;
-    clip-path: inset(0 100% 0 0);
-    opacity: 0;
-    animation: handwriteIn 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards 3.2s;
+    border: 1px solid var(--red);
+    padding: 4px 10px;
+    letter-spacing: 0.08em;
 }
 
-.hero-venn-wrapper {
-    max-width: 520px;
-    margin: 0 auto;
+/* --- Convergence --- */
+.convergence {
+    text-align: center;
+    margin-bottom: 60px;
 }
 
-.mind-map-svg {
+.convergence-svg {
     width: 100%;
+    max-width: 600px;
     height: auto;
 }
 
-/* Venn circles draw-in animation */
-.venn-circle {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: drawCircle 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+.convergence-label {
+    font-size: 1.15rem;
+    color: var(--red);
+    margin-top: 12px;
 }
 
-.venn-1 { animation-delay: 0.3s; }
-.venn-2 { animation-delay: 0.7s; }
-.venn-3 { animation-delay: 1.1s; }
-
-@keyframes drawCircle {
-    to { stroke-dashoffset: 0; }
+/* --- Intro Bottom --- */
+.intro-bottom {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-/* Center spark pulse */
-.center-spark {
-    opacity: 0;
-    animation: sparkIn 0.6s ease forwards 2s;
-}
-
-@keyframes sparkIn {
-    0% { opacity: 0; transform: scale(0.5); }
-    50% { opacity: 1; transform: scale(1.3); }
-    100% { opacity: 1; transform: scale(1); }
-}
-
-/* SVG text fade-in */
-.venn-label-main {
-    opacity: 0;
-    animation: fadeInLabel 0.6s ease forwards;
-}
-
-.venn-1 ~ .venn-label-main:nth-of-type(1) { animation-delay: 1.2s; }
-
-.mind-map-svg text {
-    opacity: 0;
-    animation: fadeInLabel 0.5s ease forwards;
-    animation-delay: 2s;
-}
-
-.mind-map-svg text:nth-child(n+8) {
-    animation-delay: 2.3s;
-}
-
-.mind-map-svg text:nth-child(n+14) {
-    animation-delay: 2.6s;
-}
-
-@keyframes fadeInLabel {
-    from { opacity: 0; }
-    to { opacity: 1; }
+.intro-bottom p {
+    margin-bottom: 20px;
+    color: #555;
+    line-height: 1.8;
+    font-size: 1.1rem;
 }
 
 .hero-annotation {
@@ -568,23 +580,8 @@ p {
 }
 
 /* =========================
-   INTRO
+   INTRO (merged section)
    ========================= */
-.intro-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: start;
-}
-
-.intro-main h2 {
-    line-height: 1.2;
-}
-
-.intro-body p {
-    margin-bottom: 20px;
-}
-
 .intro-callout {
     font-size: 1.3rem !important;
     color: var(--black) !important;
@@ -1211,11 +1208,10 @@ p {
         margin: 0 auto;
     }
 
-    .hero-venn-wrapper {
-        max-width: 400px;
+    .pillars {
+        gap: 16px;
     }
 
-    .intro-layout,
     .growth-layout,
     .philosophy-layout {
         grid-template-columns: 1fr;
@@ -1286,12 +1282,18 @@ p {
         display: none;
     }
 
-    .hero-venn-section {
-        margin-top: 50px;
+    .pillars {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 
-    .hero-venn-wrapper {
-        max-width: 320px;
+    .pillar:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .convergence-svg {
+        max-width: 300px;
     }
 }
 
@@ -1317,7 +1319,4 @@ p {
         max-width: 300px;
     }
 
-    .hero-venn-wrapper {
-        max-width: 280px;
-    }
 }

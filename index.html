@@ -96,56 +96,6 @@
                 </div>
             </div>
 
-            <!-- Venn Diagram - moved below hero -->
-            <div class="hero-venn-section">
-                <div class="hero-venn-label handwritten">what i actually do ↓</div>
-                <div class="hero-venn-wrapper">
-                    <svg class="mind-map-svg" viewBox="0 0 600 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Venn diagram circles -->
-                        <ellipse cx="300" cy="175" rx="130" ry="125" stroke="#1a1a1a" stroke-width="2" fill="rgba(255,214,10,0.08)" stroke-linecap="round" class="venn-circle venn-1"/>
-                        <ellipse cx="225" cy="300" rx="130" ry="125" stroke="#1a1a1a" stroke-width="2" fill="rgba(230,57,70,0.06)" stroke-linecap="round" class="venn-circle venn-2"/>
-                        <ellipse cx="375" cy="300" rx="130" ry="125" stroke="#1a1a1a" stroke-width="2" fill="rgba(26,26,26,0.04)" stroke-linecap="round" class="venn-circle venn-3"/>
-
-                        <!-- Center spark -->
-                        <path d="M300 260 L304 245 L308 260 L323 256 L312 264 L320 278 L308 270 L300 285 L292 270 L280 278 L288 264 L277 256 L292 260 L296 245 Z" fill="#ffd60a" stroke="#1a1a1a" stroke-width="1" class="center-spark"/>
-
-                        <!-- Labels -->
-                        <text x="300" y="125" text-anchor="middle" font-family="Caveat" font-size="30" font-weight="700" fill="#1a1a1a">DESIGN</text>
-                        <text x="300" y="148" text-anchor="middle" font-family="Caveat" font-size="15" fill="#8a8a8a">product, UX, brand</text>
-
-                        <text x="155" y="370" text-anchor="middle" font-family="Caveat" font-size="30" font-weight="700" fill="#1a1a1a">BUILD</text>
-                        <text x="155" y="393" text-anchor="middle" font-family="Caveat" font-size="15" fill="#8a8a8a">startups, products</text>
-
-                        <text x="445" y="370" text-anchor="middle" font-family="Caveat" font-size="30" font-weight="700" fill="#1a1a1a">GROW</text>
-                        <text x="445" y="393" text-anchor="middle" font-family="Caveat" font-size="15" fill="#8a8a8a">organic, community</text>
-
-                        <!-- Intersections -->
-                        <text x="235" y="225" text-anchor="middle" font-family="Caveat" font-size="14" fill="#e63946">product</text>
-                        <text x="235" y="242" text-anchor="middle" font-family="Caveat" font-size="14" fill="#e63946">thinking</text>
-                        <text x="365" y="225" text-anchor="middle" font-family="Caveat" font-size="14" fill="#e63946">brand</text>
-                        <text x="365" y="242" text-anchor="middle" font-family="Caveat" font-size="14" fill="#e63946">identity</text>
-                        <text x="300" y="355" text-anchor="middle" font-family="Caveat" font-size="14" fill="#e63946">community</text>
-                        <text x="300" y="372" text-anchor="middle" font-family="Caveat" font-size="14" fill="#e63946">architecture</text>
-
-                        <!-- Center -->
-                        <text x="300" y="295" text-anchor="middle" font-family="Caveat" font-size="17" font-weight="700" fill="#1a1a1a">THE</text>
-                        <text x="300" y="313" text-anchor="middle" font-family="Caveat" font-size="17" font-weight="700" fill="#1a1a1a">MAGIC ★</text>
-
-                        <!-- Arrow annotation -->
-                        <path d="M480 165 C465 185, 450 210, 430 230" stroke="#e63946" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-dasharray="4 3"/>
-                        <path d="M430 230 L438 222 M430 230 L436 238" stroke="#e63946" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-                        <text x="485" y="155" font-family="Caveat" font-size="14" fill="#e63946">this is where</text>
-                        <text x="485" y="172" font-family="Caveat" font-size="14" fill="#e63946">the magic happens</text>
-
-                        <!-- 21+ callout -->
-                        <g transform="translate(440, 420)">
-                            <text x="0" y="0" font-family="Space Grotesk" font-size="26" font-weight="700" fill="#1a1a1a">21+</text>
-                            <text x="0" y="16" font-family="Caveat" font-size="13" fill="#8a8a8a">countries, $0 ads</text>
-                        </g>
-                    </svg>
-                </div>
-            </div>
-
             <!-- Handwritten annotation -->
             <div class="hero-annotation handwritten">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -156,22 +106,52 @@
         </div>
     </section>
 
-    <!-- THE INTRO -->
+    <!-- THE SHORT VERSION — merged intro + what I do -->
     <section class="intro section" id="intro">
         <div class="container">
             <span class="section-label mono">THE SHORT VERSION</span>
-            <div class="intro-layout">
-                <div class="intro-main">
-                    <h2>Designer by instinct.<br>Entrepreneur by habit.<br>Growth? Always <span class="highlight">organic.</span></h2>
+            <h2 class="intro-headline">Designer by instinct.<br>Entrepreneur by habit.<br>Growth? Always <span class="highlight">organic.</span></h2>
+
+            <!-- Three Pillars -->
+            <div class="pillars">
+                <div class="pillar pillar-1">
+                    <span class="pillar-num mono">01</span>
+                    <h3 class="pillar-title">Design</h3>
+                    <p class="pillar-desc">Product, UX, brand identity — making the complex feel obvious.</p>
+                    <span class="pillar-tag mono">product thinking</span>
                 </div>
-                <div class="intro-body">
-                    <p>Some people pick a lane. This was never about picking a lane.</p>
-                    <p>Product design. Community architecture. UX. Branding. Startup strategy. Not separate skills — one way of seeing.</p>
-                    <p class="intro-callout">The through-line?<br><strong>Make it clear. Make it real. Make it grow.</strong></p>
-                    <p>When something is designed right, people don't need convincing. They just show up. They stay. They bring others.</p>
-                    <p>That's how a group chat became a community in 21+ countries. That's how products go from confused to obvious. That's how brands stop explaining themselves.</p>
+                <div class="pillar pillar-2">
+                    <span class="pillar-num mono">02</span>
+                    <h3 class="pillar-title">Build</h3>
+                    <p class="pillar-desc">Startups, products, systems — turning vision into things that work.</p>
+                    <span class="pillar-tag mono">brand identity</span>
+                </div>
+                <div class="pillar pillar-3">
+                    <span class="pillar-num mono">03</span>
+                    <h3 class="pillar-title">Grow</h3>
+                    <p class="pillar-desc">Organic communities in 21+ countries — $0 ads, just design that works.</p>
+                    <span class="pillar-tag mono">community architecture</span>
                 </div>
             </div>
+
+            <!-- Convergence -->
+            <div class="convergence">
+                <svg class="convergence-svg" viewBox="0 0 600 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="100" y1="0" x2="300" y2="72" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="6 4" stroke-linecap="round"/>
+                    <line x1="300" y1="0" x2="300" y2="72" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="6 4" stroke-linecap="round"/>
+                    <line x1="500" y1="0" x2="300" y2="72" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="6 4" stroke-linecap="round"/>
+                    <circle cx="300" cy="80" r="14" fill="#ffd60a" stroke="#1a1a1a" stroke-width="2"/>
+                    <text x="300" y="86" text-anchor="middle" font-family="Caveat, cursive" font-size="16" font-weight="700" fill="#1a1a1a">&#9733;</text>
+                </svg>
+                <p class="convergence-label handwritten">where all three meet — that's where the magic happens</p>
+            </div>
+
+            <!-- Through-line -->
+            <div class="intro-bottom">
+                <p class="intro-callout">The through-line?<br><strong>Make it clear. Make it real. Make it grow.</strong></p>
+                <p>Not separate skills — one way of seeing. When something is designed right, people don't need convincing. They just show up. They stay. They bring others.</p>
+            </div>
+
             <!-- Doodle annotation -->
             <div class="doodle-note handwritten doodle-note-right">
                 <svg width="30" height="20" viewBox="0 0 30 20" class="doodle-arrow-left">
