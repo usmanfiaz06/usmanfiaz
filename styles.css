@@ -346,6 +346,12 @@ p {
     line-height: 1.8;
 }
 
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
 /* --- Hero Visual / Portrait Sketch --- */
 .hero-visual {
     position: relative;
