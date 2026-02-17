@@ -277,9 +277,35 @@ p {
     border-color: var(--black);
 }
 
+.btn-secondary {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--black);
+    background: transparent;
+    padding: 16px 36px;
+    border: 2px solid var(--black);
+    transition: all 0.3s;
+    position: relative;
+}
+
+.btn-secondary:hover {
+    background: var(--black);
+    color: var(--white);
+}
+
 .btn-large {
     font-size: 1rem;
     padding: 22px 52px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 /* =========================
