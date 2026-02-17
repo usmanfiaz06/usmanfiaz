@@ -110,46 +110,50 @@
     <section class="intro section" id="intro">
         <div class="container">
             <span class="section-label mono">THE SHORT VERSION</span>
-            <h2 class="intro-headline">Designer by instinct.<br>Entrepreneur by habit.<br>Growth? Always <span class="highlight">organic.</span></h2>
+            <div class="intro-split">
+                <!-- Concentric Circles Diagram -->
+                <div class="intro-diagram">
+                    <svg class="concentric-svg" viewBox="0 0 520 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Outer circle — DESIGN -->
+                        <circle cx="260" cy="238" r="218" stroke="#1a1a1a" stroke-width="2" fill="rgba(255,214,10,0.03)" class="ring ring-outer"/>
 
-            <!-- Three Pillars -->
-            <div class="pillars">
-                <div class="pillar pillar-1">
-                    <span class="pillar-num mono">01</span>
-                    <h3 class="pillar-title">Design</h3>
-                    <p class="pillar-desc">Product, UX, brand identity — making the complex feel obvious.</p>
-                    <span class="pillar-tag mono">product thinking</span>
-                </div>
-                <div class="pillar pillar-2">
-                    <span class="pillar-num mono">02</span>
-                    <h3 class="pillar-title">Build</h3>
-                    <p class="pillar-desc">Startups, products, systems — turning vision into things that work.</p>
-                    <span class="pillar-tag mono">brand identity</span>
-                </div>
-                <div class="pillar pillar-3">
-                    <span class="pillar-num mono">03</span>
-                    <h3 class="pillar-title">Grow</h3>
-                    <p class="pillar-desc">Organic communities in 21+ countries — $0 ads, just design that works.</p>
-                    <span class="pillar-tag mono">community architecture</span>
-                </div>
-            </div>
+                        <!-- Middle circle — BUILD -->
+                        <circle cx="248" cy="275" r="150" stroke="#1a1a1a" stroke-width="2" fill="rgba(255,255,255,0.6)" class="ring ring-mid"/>
 
-            <!-- Convergence -->
-            <div class="convergence">
-                <svg class="convergence-svg" viewBox="0 0 600 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line x1="100" y1="0" x2="300" y2="72" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="6 4" stroke-linecap="round"/>
-                    <line x1="300" y1="0" x2="300" y2="72" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="6 4" stroke-linecap="round"/>
-                    <line x1="500" y1="0" x2="300" y2="72" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="6 4" stroke-linecap="round"/>
-                    <circle cx="300" cy="80" r="14" fill="#ffd60a" stroke="#1a1a1a" stroke-width="2"/>
-                    <text x="300" y="86" text-anchor="middle" font-family="Caveat, cursive" font-size="16" font-weight="700" fill="#1a1a1a">&#9733;</text>
-                </svg>
-                <p class="convergence-label handwritten">where all three meet — that's where the magic happens</p>
-            </div>
+                        <!-- Inner circle — GROW (filled) -->
+                        <circle cx="235" cy="318" r="88" fill="#1a1a1a" class="ring-core"/>
 
-            <!-- Through-line -->
-            <div class="intro-bottom">
-                <p class="intro-callout">The through-line?<br><strong>Make it clear. Make it real. Make it grow.</strong></p>
-                <p>Not separate skills — one way of seeing. When something is designed right, people don't need convincing. They just show up. They stay. They bring others.</p>
+                        <!-- DESIGN label — top-right of outer ring -->
+                        <text x="370" y="80" font-family="'Space Grotesk', sans-serif" font-size="26" font-weight="700" fill="#1a1a1a" class="diagram-label">DESIGN</text>
+                        <text x="370" y="104" font-family="'Caveat', cursive" font-size="16" fill="#999" class="diagram-label">product · UX · brand</text>
+
+                        <!-- BUILD label — right of middle ring -->
+                        <text x="335" y="178" font-family="'Space Grotesk', sans-serif" font-size="26" font-weight="700" fill="#1a1a1a" class="diagram-label">BUILD</text>
+                        <text x="335" y="202" font-family="'Caveat', cursive" font-size="16" fill="#999" class="diagram-label">startups · products</text>
+
+                        <!-- GROW label — center of inner circle (white) -->
+                        <text x="235" y="310" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="26" font-weight="700" fill="#ffffff" class="diagram-label">GROW</text>
+                        <text x="235" y="336" text-anchor="middle" font-family="'Caveat', cursive" font-size="15" fill="rgba(255,255,255,0.55)" class="diagram-label">organic · community</text>
+
+                        <!-- Handwritten arrow annotation -->
+                        <path d="M432 262 C418 292, 386 326, 340 338" stroke="#e63946" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-dasharray="4 3" class="diagram-label"/>
+                        <path d="M340 338 L348 330 M340 338 L346 346" stroke="#e63946" stroke-width="1.5" fill="none" stroke-linecap="round" class="diagram-label"/>
+                        <text x="418" y="248" font-family="'Caveat', cursive" font-size="15" fill="#e63946" class="diagram-label">the magic</text>
+                        <text x="423" y="267" font-family="'Caveat', cursive" font-size="15" fill="#e63946" class="diagram-label">happens here ★</text>
+
+                        <!-- 21+ stat — bottom-left -->
+                        <text x="42" y="492" font-family="'Space Grotesk', sans-serif" font-size="30" font-weight="700" fill="#1a1a1a" class="diagram-label">21+</text>
+                        <text x="42" y="512" font-family="'Caveat', cursive" font-size="15" fill="#999" class="diagram-label">countries, $0 ads</text>
+                    </svg>
+                </div>
+
+                <!-- Text column -->
+                <div class="intro-text">
+                    <h2>Designer by instinct.<br>Entrepreneur by habit.<br>Growth? Always <span class="highlight">organic.</span></h2>
+                    <p>Some people pick a lane. This was never about picking a lane.</p>
+                    <p class="intro-callout">The through-line?<br><strong>Make it clear. Make it real. Make it grow.</strong></p>
+                    <p>Not separate skills — one way of seeing. When something is designed right, people don't need convincing. They just show up. They stay. They bring others.</p>
+                </div>
             </div>
 
             <!-- Doodle annotation -->

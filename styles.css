@@ -448,95 +448,69 @@ p {
     font-size: 1rem;
 }
 
-/* --- Three Pillars Diagram --- */
-.intro-headline {
-    line-height: 1.2;
-    margin-bottom: 60px;
-}
-
-.pillars {
+/* --- Concentric Diagram Section --- */
+.intro-split {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    margin-bottom: 0;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
 }
 
-.pillar {
-    border: 2px solid var(--black);
-    padding: 32px 28px;
-    position: relative;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.intro-diagram {
+    max-width: 520px;
 }
 
-.pillar:hover {
-    transform: translateY(-6px);
-    box-shadow: 6px 6px 0 var(--yellow);
-}
-
-.pillar-1 { border-top: 5px solid var(--yellow); }
-.pillar-2 { border-top: 5px solid var(--red); }
-.pillar-3 { border-top: 5px solid var(--black); }
-
-.pillar-num {
-    display: block;
-    font-size: 0.7rem;
-    color: #999;
-    margin-bottom: 16px;
-}
-
-.pillar-title {
-    font-family: var(--font-heading);
-    font-size: 1.6rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.pillar-desc {
-    font-size: 0.95rem;
-    color: #666;
-    line-height: 1.7;
-    margin-bottom: 20px;
-}
-
-.pillar-tag {
-    display: inline-block;
-    font-size: 0.65rem;
-    color: var(--red);
-    border: 1px solid var(--red);
-    padding: 4px 10px;
-    letter-spacing: 0.08em;
-}
-
-/* --- Convergence --- */
-.convergence {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.convergence-svg {
+.concentric-svg {
     width: 100%;
-    max-width: 600px;
     height: auto;
 }
 
-.convergence-label {
-    font-size: 1.15rem;
-    color: var(--red);
-    margin-top: 12px;
+/* Circle draw-in animation */
+.ring {
+    stroke-dasharray: 1400;
+    stroke-dashoffset: 1400;
+    animation: drawRing 1.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
-/* --- Intro Bottom --- */
-.intro-bottom {
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: center;
+.ring-outer { animation-delay: 0.3s; }
+.ring-mid { animation-delay: 0.9s; }
+
+@keyframes drawRing {
+    to { stroke-dashoffset: 0; }
 }
 
-.intro-bottom p {
+.ring-core {
+    opacity: 0;
+    animation: coreIn 0.7s ease forwards 1.5s;
+}
+
+@keyframes coreIn {
+    0% { opacity: 0; transform: scale(0.85); transform-origin: 235px 318px; }
+    100% { opacity: 1; transform: scale(1); transform-origin: 235px 318px; }
+}
+
+/* SVG labels fade in */
+.diagram-label {
+    opacity: 0;
+    animation: labelFadeIn 0.5s ease forwards;
+    animation-delay: 2s;
+}
+
+@keyframes labelFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Text column */
+.intro-text h2 {
+    line-height: 1.2;
+    margin-bottom: 28px;
+}
+
+.intro-text p {
     margin-bottom: 20px;
     color: #555;
     line-height: 1.8;
-    font-size: 1.1rem;
 }
 
 .hero-annotation {
@@ -1208,8 +1182,14 @@ p {
         margin: 0 auto;
     }
 
-    .pillars {
-        gap: 16px;
+    .intro-split {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .intro-diagram {
+        max-width: 420px;
+        margin: 0 auto;
     }
 
     .growth-layout,
@@ -1282,18 +1262,12 @@ p {
         display: none;
     }
 
-    .pillars {
-        grid-template-columns: 1fr;
-        gap: 20px;
+    .intro-split {
+        gap: 30px;
     }
 
-    .pillar:hover {
-        transform: none;
-        box-shadow: none;
-    }
-
-    .convergence-svg {
-        max-width: 300px;
+    .intro-diagram {
+        max-width: 340px;
     }
 }
 
