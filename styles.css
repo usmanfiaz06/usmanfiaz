@@ -330,6 +330,9 @@ p {
     font-size: 1.6rem;
     color: var(--red);
     margin-bottom: 16px;
+    clip-path: inset(0 100% 0 0);
+    opacity: 0;
+    animation: handwriteIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards 0.5s;
 }
 
 .hero-headline {
@@ -392,8 +395,9 @@ p {
     position: absolute;
     font-size: 1.1rem;
     color: var(--red);
+    clip-path: inset(0 100% 0 0);
     opacity: 0;
-    animation: fadeIn 0.8s ease forwards;
+    animation: handwriteIn 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     white-space: nowrap;
     z-index: 3;
 }
@@ -435,6 +439,9 @@ p {
     font-size: 1.3rem;
     color: var(--red);
     margin-bottom: 24px;
+    clip-path: inset(0 100% 0 0);
+    opacity: 0;
+    animation: handwriteIn 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards 3.2s;
 }
 
 .hero-venn-wrapper {
@@ -508,12 +515,37 @@ p {
     font-size: 1.2rem;
     color: var(--red);
     margin-top: 60px;
+    clip-path: inset(0 100% 0 0);
     opacity: 0;
-    animation: fadeIn 1s ease forwards 3.5s;
+    animation: handwriteIn 1s cubic-bezier(0.22, 1, 0.36, 1) forwards 3.5s;
 }
 
 @keyframes fadeIn {
     to { opacity: 1; }
+}
+
+/* --- Handwriting reveal animation --- */
+@keyframes handwriteIn {
+    0% {
+        clip-path: inset(0 100% 0 0);
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    100% {
+        clip-path: inset(0 0% 0 0);
+        opacity: 1;
+    }
+}
+
+.handwrite-reveal {
+    clip-path: inset(0 100% 0 0);
+    opacity: 0;
+}
+
+.handwrite-reveal.written {
+    animation: handwriteIn 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 /* =========================

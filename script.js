@@ -183,4 +183,28 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     window.addEventListener('scroll', updateActiveNav, { passive: true });
+
+    // --- Handwriting reveal on scroll ---
+    const handwriteElements = document.querySelectorAll(
+        '.doodle-note, .work-doodle, .venture-annotation, ' +
+        '.case-annotation, .philosophy-doodle, .gallery-note, ' +
+        '.cta-doodle, .footer-tagline, .audience-closer strong, ' +
+        '.intro-callout strong, .growth-rule .handwritten'
+    );
+
+    handwriteElements.forEach(el => el.classList.add('handwrite-reveal'));
+
+    const handwriteObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('written');
+                handwriteObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.3,
+        rootMargin: '0px 0px -30px 0px'
+    });
+
+    handwriteElements.forEach(el => handwriteObserver.observe(el));
 });
